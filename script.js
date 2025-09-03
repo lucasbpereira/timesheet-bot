@@ -47,8 +47,8 @@ function delay(time) {
             timeout: 15000
         });
         
-        await page.$eval('input[name="login"]', (el, value) => el.value = value, 'lucasbarbosa');
-        await page.$eval('input[name="senha"]', (el, value) => el.value = value, 'mestra');
+        await page.$eval('input[name="login"]', (el, value) => el.value = value, DADOS_FORMULARIO.login);
+        await page.$eval('input[name="senha"]', (el, value) => el.value = value, DADOS_FORMULARIO.senha);
         
         await Promise.all([
             page.waitForNavigation({ waitUntil: 'domcontentloaded' }),
