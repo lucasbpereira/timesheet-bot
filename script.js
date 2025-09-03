@@ -6,6 +6,8 @@ const readline = require('readline').createInterface({
 
 // Variáveis globais para preenchimento
 const DADOS_FORMULARIO = {
+  login: 'usuario',
+  senha: 'mestra',
   projeto: '68',
   modulo: 'Férias',
   solicitacao: '',
